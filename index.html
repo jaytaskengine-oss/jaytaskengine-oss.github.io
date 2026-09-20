@@ -117,6 +117,22 @@
       grid-template-columns:repeat(3,1fr);
       gap:18px;
     }
+    .price{
+      font-size:2rem;
+      font-weight:800;
+      margin:.2rem 0 .35rem;
+    }
+    .package-note{
+      color:var(--muted);
+      font-size:.92rem;
+      margin-top:14px;
+    }
+    .package-list{
+      color:var(--muted);
+      padding-left:18px;
+      margin:16px 0 22px;
+    }
+    .package-list li{margin:7px 0}
     .steps{
       display:grid;
       grid-template-columns:repeat(3,1fr);
@@ -166,6 +182,7 @@
         <a class="brand" href="/">JayTaskEngine</a>
         <div class="navlinks">
           <a href="#services">Services</a>
+          <a href="#packages">Packages</a>
           <a href="#process">Process</a>
           <a class="button" href="mailto:jaytaskengine@gmail.com?subject=Engineering%20work%20inquiry">Send a task</a>
         </div>
@@ -224,6 +241,51 @@
             <p>White-label engineering capacity for small client items that do not need another full-time hire.</p>
           </div>
         </div>
+      </section>
+
+
+      <section id="packages">
+        <h2>Fixed-scope starter sprints</h2>
+        <p class="section-intro">Simple first engagements for teams that want a concrete outcome without opening a large consulting project. Final scope and price are confirmed before work begins.</p>
+        <div class="grid">
+          <div class="card">
+            <span class="eyebrow">Fastest entry point</span>
+            <h3>Bug Fix Sprint</h3>
+            <div class="price">Starting at $299</div>
+            <ul class="package-list">
+              <li>One reproducible application bug</li>
+              <li>Root-cause analysis and implementation</li>
+              <li>Tests where appropriate</li>
+              <li>Reviewable code change / PR</li>
+            </ul>
+            <a class="button" href="mailto:jaytaskengine@gmail.com?subject=Bug%20Fix%20Sprint">Send a bug</a>
+          </div>
+          <div class="card">
+            <span class="eyebrow">Reliability</span>
+            <h3>CI / Test Repair Sprint</h3>
+            <div class="price">Starting at $399</div>
+            <ul class="package-list">
+              <li>Failing tests or broken CI workflow</li>
+              <li>Diagnosis of the failure path</li>
+              <li>Focused repair and validation</li>
+              <li>Clean handoff for team review</li>
+            </ul>
+            <a class="button" href="mailto:jaytaskengine@gmail.com?subject=CI%20Test%20Repair%20Sprint">Send the failure</a>
+          </div>
+          <div class="card">
+            <span class="eyebrow">Integration work</span>
+            <h3>API Integration Sprint</h3>
+            <div class="price">Starting at $499</div>
+            <ul class="package-list">
+              <li>One focused API or webhook integration</li>
+              <li>Auth / data-flow implementation</li>
+              <li>Error handling and basic validation</li>
+              <li>Reviewable implementation</li>
+            </ul>
+            <a class="button" href="mailto:jaytaskengine@gmail.com?subject=API%20Integration%20Sprint">Send the integration</a>
+          </div>
+        </div>
+        <p class="package-note">Larger or ambiguous scopes are quoted separately. These starter sprints are designed for small, clearly bounded technical work.</p>
       </section>
 
       <section id="process">
