@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>JayTaskEngine | Engineering Overflow & Technical Fixes</title>
+  <meta name="description" content="JayTaskEngine handles scoped software fixes, CI and test repairs, API integrations, automation, and engineering overflow work for software teams and agencies.">
+  <meta name="robots" content="index,follow">
+  <style>
+    :root{
+      --bg:#0b1020;
+      --panel:#121a2f;
+      --text:#eef3ff;
+      --muted:#a8b3cf;
+      --line:#24304e;
+      --accent:#7aa2ff;
+      --accent2:#9be7c4;
+      --max:1080px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:linear-gradient(180deg,#0b1020 0%,#0e1426 100%);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:inherit}
+    .wrap{width:min(92%,var(--max));margin:0 auto}
+    header{
+      border-bottom:1px solid var(--line);
+      position:sticky;
+      top:0;
+      backdrop-filter:blur(10px);
+      background:rgba(11,16,32,.88);
+      z-index:10;
+    }
+    nav{
+      min-height:68px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+    .brand{
+      font-weight:800;
+      letter-spacing:.2px;
+      text-decoration:none;
+    }
+    .navlinks{display:flex;gap:18px;align-items:center}
+    .navlinks a{
+      text-decoration:none;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+    .button{
+      display:inline-block;
+      text-decoration:none;
+      padding:12px 18px;
+      border-radius:10px;
+      font-weight:700;
+      background:var(--accent);
+      color:#071021;
+    }
+    .button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid var(--line);
+    }
+    .hero{
+      padding:100px 0 70px;
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:50px;
+      align-items:center;
+    }
+    .eyebrow{
+      display:inline-block;
+      color:var(--accent2);
+      font-weight:700;
+      margin-bottom:12px;
+    }
+    h1{
+      font-size:clamp(2.6rem,7vw,5rem);
+      line-height:1.02;
+      margin:0 0 22px;
+      max-width:850px;
+    }
+    .lead{
+      font-size:1.2rem;
+      color:var(--muted);
+      max-width:720px;
+      margin-bottom:28px;
+    }
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .card{
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:24px;
+    }
+    .card h3{margin-top:0}
+    .card p{color:var(--muted)}
+    section{padding:70px 0}
+    h2{
+      font-size:clamp(2rem,4vw,3rem);
+      margin:0 0 14px;
+    }
+    .section-intro{
+      color:var(--muted);
+      max-width:720px;
+      margin-bottom:30px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+    .steps{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+      counter-reset:step;
+    }
+    .step{
+      border-top:1px solid var(--line);
+      padding-top:18px;
+    }
+    .step::before{
+      counter-increment:step;
+      content:"0" counter(step);
+      display:block;
+      color:var(--accent2);
+      font-weight:800;
+      margin-bottom:8px;
+    }
+    .offer{
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:30px;
+      align-items:center;
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:30px;
+    }
+    .offer p{color:var(--muted);margin-bottom:0}
+    footer{
+      border-top:1px solid var(--line);
+      padding:28px 0 40px;
+      color:var(--muted);
+      font-size:.92rem;
+    }
+    @media (max-width:800px){
+      .hero,.grid,.steps,.offer{grid-template-columns:1fr}
+      .hero{padding-top:70px}
+      .navlinks a:not(.button){display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="/">JayTaskEngine</a>
+        <div class="navlinks">
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a class="button" href="mailto:jaytaskengine@gmail.com?subject=Engineering%20work%20inquiry">Send a task</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <div>
+          <span class="eyebrow">Engineering overflow, without adding headcount</span>
+          <h1>Small technical work. Shipped cleanly.</h1>
+          <p class="lead">
+            JayTaskEngine handles clearly scoped engineering work for software teams and agencies:
+            bug fixes, failing tests and CI, API integrations, automation, and focused frontend/backend tasks.
+          </p>
+          <div class="actions">
+            <a class="button" href="mailto:jaytaskengine@gmail.com?subject=Scoped%20engineering%20task">Send a scoped task</a>
+            <a class="button secondary" href="#services">See capabilities</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Best fit</h3>
+          <p>Work that is important enough to ship, but too small or distracting to justify pulling your core team off higher-priority delivery.</p>
+          <p><strong>Typical first sprint:</strong> one clearly defined item, fixed scope, reviewed through code/tests/PR.</p>
+        </div>
+      </section>
+
+      <section id="services">
+        <h2>What we handle</h2>
+        <p class="section-intro">Focused work with clear acceptance criteria, fast feedback, and a concrete deliverable.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>Bug fixes</h3>
+            <p>React, Next.js, TypeScript, Node.js, Python, and related application issues with reproducible scope.</p>
+          </div>
+          <div class="card">
+            <h3>CI & tests</h3>
+            <p>Failing test suites, GitHub Actions issues, build breakages, and reliability cleanup.</p>
+          </div>
+          <div class="card">
+            <h3>API integrations</h3>
+            <p>Connect services, repair broken integrations, add webhooks, and implement focused data flows.</p>
+          </div>
+          <div class="card">
+            <h3>Automation</h3>
+            <p>Reduce repetitive operational work with practical scripts and workflow automation.</p>
+          </div>
+          <div class="card">
+            <h3>Code audits + fixes</h3>
+            <p>Review a narrow technical area, identify concrete problems, and follow through with implementation.</p>
+          </div>
+          <div class="card">
+            <h3>Agency overflow</h3>
+            <p>White-label engineering capacity for small client items that do not need another full-time hire.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="process">
+        <h2>How it works</h2>
+        <p class="section-intro">The goal is to make small technical work easy to hand off and easy to review.</p>
+        <div class="steps">
+          <div class="step">
+            <h3>Send the scope</h3>
+            <p>Share the issue, requirements, repository context, or expected outcome.</p>
+          </div>
+          <div class="step">
+            <h3>Get a clear plan</h3>
+            <p>We confirm fit, define acceptance criteria, and price the work as a focused sprint.</p>
+          </div>
+          <div class="step">
+            <h3>Review the delivery</h3>
+            <p>Receive implementation, tests where appropriate, and a clean reviewable change.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="offer">
+          <div>
+            <h2>Have one backlog item that should already be done?</h2>
+            <p>Send the scope. If it fits, we will tell you quickly whether JayTaskEngine can own it end-to-end.</p>
+          </div>
+          <a class="button" href="mailto:jaytaskengine@gmail.com?subject=Backlog%20item%20for%20JayTaskEngine">Email JayTaskEngine</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 JayTaskEngine · Engineering overflow and scoped technical execution.</div>
+  </footer>
+</body>
+</html>
